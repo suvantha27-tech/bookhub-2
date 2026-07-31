@@ -1,0 +1,13 @@
+{
+  "name": "goflie-admin",
+  "main": "worker.js",
+  "compatibility_date": "2026-07-25",
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "bookbub",
+      "database_id": "feb97bfb-8730-4a90-b06f-f1c50a814f0a"
+    }
+  ]
+}

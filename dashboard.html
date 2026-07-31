@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - BookHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 បញ្ជី Link របស់អ្នក</h1>
+
+    <!-- ===== ប៊ូតុង Play ធំ (ឧទាហរណ៍) ===== -->
+    <div class="image-container">
+      <img src="https://via.placeholder.com/600x300/000/fff?text=Video+Thumbnail" alt="Thumbnail" />
+      <div class="play-button" onclick="alert('▶️ ចាប់ផ្ដើមចាក់វីដេអូ!')"></div>
+    </div>
+
+    <!-- ===== ទម្រង់បង្កើត Link ===== -->
+    <div class="create-section">
+      <input type="text" id="newSlug" placeholder="Slug (ឧ. my-page)" />
+      <input type="url" id="newUrl" placeholder="URL ដើម (https://...)" />
+      <button onclick="createLink()">➕ បង្កើត</button>
+    </div>
+
+    <!-- ===== តារាងបង្ហាញ Link ===== -->
+    <table id="linkTable">
+      <thead>
+        <tr>
+          <th>Slug</th>
+          <th>Short URL</th>
+          <th>Original URL</th>
+          <th>Clicks</th>
+          <th>Action</th>   <!-- ← ជួរនេះសម្រាប់ Play + Copy -->
+        </tr>
+      </thead>
+      <tbody id="linkList">
+        <!-- JavaScript នឹងបញ្ចូលទិន្នន័យនៅទីនេះ -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
